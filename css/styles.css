@@ -91,6 +91,12 @@ h3 {
 p {
     margin: 20px;
 }
+hr {
+    display: none;
+}
+span {
+    font-weight: bold;
+}
 
 
 /*header*/
@@ -267,6 +273,7 @@ section.contacto article {
     border-radius: 18px;
     box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
     padding: 40px;
+    text-align: justify;
 
 }
 section.contacto article h2 {
