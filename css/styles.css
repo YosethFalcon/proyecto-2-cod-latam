@@ -1,0 +1,348 @@
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,400;1,700 & display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+/*body*/
+body {
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    }
+img{
+    max-width: 100%
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+    
+}
+/*menu desplegable*/
+.menu-container {
+    position: relative;
+    padding-right: 40px;
+    font-size: 45px;
+  }
+  
+  #menu {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 85px;
+    border-radius: 15px;
+    background-color: #505591;
+    color: #fbfbfb;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
+  }
+  #toggleButton:hover {
+    background-color: #0056b3;
+    transition: .4s;
+    box-shadow: 10px 10px 10px rgba(123, 124, 124, 0.7);
+}
+  #menu li {
+    display: inline-block;
+    padding: 8px 12px;
+  }
+  
+  #toggleButton {
+    cursor: pointer;
+    background-color: #2b2f6b;
+    color: #fbfbfb;
+    border-radius: 15px;
+    width: 85px;
+    display: inline-block;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
+    border: none;
+    height: 35px;
+  }
+
+  
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+/*tamaños letras*/
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    color: rgba(245, 248, 41, 0.993);
+}
+
+p {
+    margin: 20px;
+}
+
+
+/*header*/
+header {
+    background-color: #fbfbfb;
+    height: 90px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    
+}
+
+.logo {
+    width: 60px;
+}
+/*barra de navegacion*/
+nav ul {
+    display: flex;
+    font-size: 15px;
+}
+.menu-link {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*main*/
+main {
+    max-width: 1200px;
+    margin: auto;
+   
+    
+}
+
+/*general de section*/
+section {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 20px;
+    padding-top: 115px;
+    text-align: center;
+    
+}
+/*section inicio*/
+section#inicio {
+    text-align: center;
+    justify-content: space-around;
+}
+
+figure.mi_foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 21px;
+    
+    
+}
+
+figure.mi_foto img {
+    max-width: 400px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
+    
+    
+}
+
+article.inicio_art p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2b2f6b;
+    color: #fbfbfb;
+    border-radius: 50px;
+    width: 180px;
+    display: inline-block;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7); 
+}
+.btn:hover {
+    background-color: #0056b3;
+    transition: .4s;
+    box-shadow: 10px 10px 10px rgba(123, 124, 124, 0.7);
+}
+
+
+/*section Educacion*/
+section#educacion {
+    background-color: rgb(216, 216, 216);
+    border-radius: 15px;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center;
+    padding: 80px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
+    
+}
+section#educacion h2 {
+    font-size: 32px;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+div.educacion ul li{
+    padding: 10px; 
+    font-weight: bold;
+}
+
+/*section Proyectos*/
+section#proyectos h2{
+    padding: 24px;
+}
+/*#proyect .cards article generalidades*/
+section#proyectos .cards article{
+    background-size: cover;
+    color: rgb(223, 223, 223);
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
+    font-size: 15px;
+}
+
+
+/*cards*/
+
+.proyecto1{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.9)
+        ),
+        url("../img/binario.jpg");
+        
+}
+.proyecto2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.9)
+        ),
+        url("../img/laptop.jpg");
+        
+
+}
+
+.proyecto3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.9)
+        ),
+        url("../img/codigo2.jpg");
+}
+
+.cards article {
+    padding: 20px;  
+
+}
+/*section contacto*/
+section.contacto article {
+    background-color: rgb(216, 216, 216);
+    color: #0f0f0f;
+    border-radius: 18px;
+    box-shadow: 10px 10px 10px rgba(10, 10, 14, 0.7);
+    padding: 40px;
+
+}
+section.contacto article h2 {
+    margin-bottom: 20px;
+}
+
+section.contacto ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0;
+}
+.iconos img {
+    width: 100px;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+.iconos:hover {
+    background-color: #0056b3;
+    transition: .4s;
+    box-shadow: 10px 10px 10px rgba(94, 94, 95, 0.7);
+}
+
+footer {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #2b2f6b;
+    color: #fbfbfb;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+footer.cod-latam p {
+   margin: auto;
+}
+
+
+@media (min-width: 1000px) {
+    section#inicio.sec_inicio {
+        flex-direction: row;
+    }
+    section#inicio.sec_inicio article {
+       padding-top: 40px;
+    }
+    section#inicio.sec_inicio figure img {
+        border-radius: 20px;
+    }
+
+    .cards {
+        display: flex;
+        text-align: center;
+
+    }
+    div.educacion {
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-left: 40px;
+    }
+
+    .img_inicio{
+        background-image: 
+        url("../img/road-g4a70ca18e_1280.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 260px;
+        height: 260px;
+        border-radius: 20px;
+    }
+    
+
+}
