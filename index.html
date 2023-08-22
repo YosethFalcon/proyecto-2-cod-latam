@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo_yf.png" type="image/x-icon">
     <title>Yoseth Falcon</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">    
 </head>
 
-<body id="content">
+<body >
     <!--header imagen y  barra de navegacion-->
-    <header>
+    <header >
           <img class="logo" src="./img/logo_yf.png" alt="imagen logo">
+          <label for="toggle"></label>
           <nav>
             <div class="menu-container">
-                <button id="toggleButton">INDICE</button>
+                <button  id="toggleButton" >INDICE</button>
                 <ul id="menu">
                     <li class="menu-link"><a href="#inicio">Inicio</a></li>
                     <li class="menu-link"><a href="#educacion">Educacion</a></li>
                     <li class="menu-link"><a href="#proyectos">Proyectos</a></li>
-                    <li class="menu-link"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-link"><a href="#contacto">Hablemos</a></li>
                 </ul>
             </div>
             
@@ -30,7 +32,7 @@
             <!--seccion de inicio-->
             <section id="inicio" class="sec_inicio">
                 <figure class="mi_foto"   >
-                    <img src="./img/IMG-20230611-WA0023.jpg" alt="mi foto">
+                    <img id="foto_oscuro" src="./img/IMG-20230611-WA0023.jpg" alt="mi foto">
                 </figure>
 
                 <article class="inicio_art">
@@ -60,7 +62,7 @@
             <section id="proyectos">
                 <h2>Proyecto</h2>
                     <div class="cards">
-                        <article class="proyecto1">
+                        <article id="carticas" class="proyecto1">
                             <h3>PORFOLIO</h3>
                             <p>Este proyecto fue realizado en el curso de 'Código Palante', en el cual adquirí conocimientos en HTML, CSS, JS, Git y GitHub.
                             El desarrollo de este proyecto me ha brindado experiencia y conocimientos para realizar páginas móviles, lo cual ha sido muy útil y despues llevarlas a modo Desktop.
@@ -68,26 +70,26 @@
                             <a href="#" class="btn">Ve al enlace</a>
                         </article>
                             
-                        <article class="proyecto2">
-                            <h3>PORFOLIO</h3>
-                            <p>Este proyecto fue realizado en el curso de 'Código Palante', en el cual adquirí conocimientos en HTML, CSS, JS, Git y GitHub.
-                            El desarrollo de este proyecto me ha brindado experiencia y conocimientos para realizar páginas móviles, lo cual ha sido muy útil y despues llevarlas a modo Desktop.</p>   
-                            <a href="#" class="btn">Ve al enlace</a>
+                        <article id="carticas" class="proyecto2">
+                            <h3>SITIO PARA WEB DYN SEGURIDAD</h3>
+                            <p>                El siguiente proyecto, fabricado desde HTML, CSS y JavaScript, es una pequeña página de una empresa de seguridad. En ella mostramos diferentes características de la misma, como su misión, visión y marcas con las que trabaja. También dejamos listos todos los lugares donde pueden contactar.
+                            Trabajando desde un codigo limpio.</p>
+
+                            <a href="" class="btn evolution-button" >Ve al enlace</a>
                         </article>
                         
-                        <article class="proyecto3">
-                            <h3>PORFOLIO</h3>
-                            <p>Este proyecto fue realizado en el curso de 'Código Palante', en el cual adquirí conocimientos en HTML, CSS, JS, Git y GitHub.
-                            El desarrollo de este proyecto me ha brindado experiencia y conocimientos para realizar páginas móviles, lo cual ha sido muy útil y despues llevarlas a modo Desktop.</p>
-                            <a href="#" class="btn">Ve al enlace</a>
+                        <article id="carticas" class="proyecto3"> 
+                            <h3>SITIO WEB PARA ESTETICA</h3>
+                            <p>Esta página está hecha con la finalidad de mostrar a los clientes los diversos servicios prestados. También, se busca que sea de fácil contacto, con una estética atractiva. Además, se permite agendar citas, dejando los datos y números telefónicos, y organizándolos para evitar citas dobles.</p>
+                            <a href="" class="btn evolution-button" >Ve al enlace</a>
                         </article>
                         
                     </div>
             </section>
 
             <!--seccion contacto-->
-            <section id="contacto" class="contacto">
-                <article>
+            <section  class="contacto">
+                <article id="contacto">
                     <h2>Hablemos!</h2>
                         <p>
                         <span>Mis Primeros Pasos:</span> 
@@ -133,9 +135,14 @@
             </section>
     </main>
     <footer class="cod-latam">
+        
+        <button id="modo-oscuro">🌙</button>
+        
         <p>codigo latam, 2023 &copy Y. Falcon</p>
     </footer>
     <!--JS-->
-    <script src="js/main.js"></script>
-</body#>
+
+    <script src="js/main.js"></script>  
+</body>
+
 </html>

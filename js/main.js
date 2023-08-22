@@ -31,3 +31,22 @@
     });
   });
 
+  //modo oscuro
+  const modoOscuro = document.querySelector("#modo-oscuro")
+  modoOscuro.addEventListener("click", function () {
+    document.body.classList.toggle("modo-oscuro")
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const evolutionButtons = document.querySelectorAll('.evolution-button');
+
+    function mostrarAlerta() {
+        alert("En evolución");
+    }
+
+    evolutionButtons.forEach(button => {
+        button.addEventListener('click', mostrarAlerta);
+    });
+});
+
+
